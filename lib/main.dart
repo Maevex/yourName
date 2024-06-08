@@ -1,3 +1,5 @@
+import 'dart:js_util';
+
 import 'package:flutter/material.dart';
 import 'package:app/add.dart';
 import 'package:app/home.dart';
@@ -11,9 +13,14 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return  MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: home()
+      initialRoute: '/',
+      routes: {
+        '/':(context) => home(),
+        '/add':(context) => test()
+      },
+      
     );
   }
 }

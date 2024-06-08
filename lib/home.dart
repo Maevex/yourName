@@ -20,9 +20,7 @@ class home extends StatelessWidget {
                 fontWeight: FontWeight.bold
               ),),
               ElevatedButton(onPressed: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context){
-                  return test();
-                }));
+                Navigator.pushNamed(context, '/add');
               }, 
               child: 
               Text('Start'))

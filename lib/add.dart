@@ -106,7 +106,7 @@ class _testState extends State<test> {
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
                     side: BorderSide(color: const Color.fromARGB(255, 117, 39, 176)),
-                    primary: Color.fromARGB(255, 117, 39, 176),
+                    backgroundColor: Color.fromARGB(255, 117, 39, 176),
                   ),
                   onPressed: () {
                     if (inputNama.isNotEmpty && inputUmur != null && gender != null) {
@@ -164,7 +164,7 @@ class _testState extends State<test> {
                                 ),
                               ),
                               ElevatedButton(
-                                style: ElevatedButton.styleFrom(primary: Colors.white, side: BorderSide(color: Colors.red)),
+                                style: ElevatedButton.styleFrom(backgroundColor: Colors.white, side: BorderSide(color: Colors.red)),
                                 onPressed: () {
                                   setState(() {
                                     data.removeAt(index);
